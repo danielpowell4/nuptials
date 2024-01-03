@@ -10,7 +10,7 @@ const Counter = ({ count, label }) => (
   </div>
 );
 
-const Countdown = ({ until }) => {
+const Countdown = ({ title, until }) => {
   const [msecsLeft, setMsecsLeft] = React.useState(until - Date.now());
 
   const secs = Math.floor(msecsLeft / 1000) % 60;
@@ -26,11 +26,14 @@ const Countdown = ({ until }) => {
   }, []);
 
   return (
-    <div className={styles.Countdown}>
-      {days && <Counter count={days} label="days" />}
-      {hours && <Counter count={hours} label="hours" />}
-      {mins && <Counter count={mins} label="minutes" />}
-      <Counter count={secs} label="seconds" />
+    <div>
+      <h2 style={{ marginBottom: '1rem' }}>{title}</h2>
+      <div className={styles.Countdown}>
+        {days && <Counter count={days} label="days" />}
+        {hours && <Counter count={hours} label="hours" />}
+        {mins && <Counter count={mins} label="minutes" />}
+        <Counter count={secs} label="seconds" />
+      </div>
     </div>
   );
 };
