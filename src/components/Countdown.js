@@ -26,7 +26,7 @@ const Countdown = ({ title, until }) => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.CountdownContainer}>
       <h2 style={{ marginBottom: '1rem' }}>{title}</h2>
       <div className={styles.Countdown}>
         {days && <Counter count={days} label="days" />}

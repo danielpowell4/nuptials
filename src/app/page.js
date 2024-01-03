@@ -1,8 +1,6 @@
 import styles from './page.module.css'
 import Countdown from '@/components/Countdown'
 
-
-
 export default function Home() {
   return (
     <main className={styles.main}>
