@@ -1,0 +1,10 @@
+.Countdown {
+  display: flex;
+  gap: 1.15rem;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.Counter {
+  text-align: center;
+}
