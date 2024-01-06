@@ -1,30 +1,34 @@
+import { Link } from "react-aria-components";
+
+import styles from "./Nav.module.css";
+
 export default function Nav() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
-          <a href="/dev">Home</a>
+          <Link href="/dev">Home</Link>
         </li>
         <li>
-          <a href="/dev/getting-here">Traveling</a>
+          <Link href="/dev/getting-here">Traveling</Link>
         </li>
         <li>
-          <a href="/dev/lodging">Sleeping</a>
+          <Link href="/dev/lodging">Sleeping</Link>
         </li>
         <li>
-          <a href="/dev/pizza-and-breweries">Eating</a>
+          <Link href="/dev/pizza-and-breweries">Eating</Link>
         </li>
         <li>
-          <a href="/dev/stuff-to-do">Playing</a>
+          <Link href="/dev/stuff-to-do">Playing</Link>
         </li>
         <li>
-          <a href="/dev/schedule">Schedule</a>
+          <Link href="/dev/schedule">Schedule</Link>
         </li>
         <li>
-          <a href="/dev/registry">Registry</a>
+          <Link href="/dev/registry">Registry</Link>
         </li>
         <li>
-          <a href="/dev/rsvp">RSVP</a>
+          <Link href="/dev/rsvp">RSVP</Link>
         </li>
       </ul>
     </nav>
