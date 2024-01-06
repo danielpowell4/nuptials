@@ -1,7 +1,9 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
   return (
-    <section>
-      <p>Footer goes here</p>
-    </section>
+    <footer className={styles.footer}>
+      <p>With ❤️ from Silverton, Colorado</p>
+    </footer>
   );
 }
