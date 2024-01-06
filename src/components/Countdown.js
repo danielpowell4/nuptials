@@ -3,40 +3,58 @@
 import * as React from "react";
 import styles from "./Countdown.module.css";
 
+const formatCount = (count) =>
+  new Intl.NumberFormat("en-US", {
+    maximumFractionDigits: 0,
+  }).format(count);
+
 const Counter = ({ count, label }) => (
   <div className={styles.Counter}>
-    <div className="count">{count}</div>
+    <div className="count">{formatCount(count)}</div>
     <div className="label">{label}</div>
   </div>
 );
 
 const Countdown = ({ title, until }) => {
-  const [msecsLeft, setMsecsLeft] = React.useState(until - Date.now());
+  const calculateTimeLeft = () => {
+    const targetDate = new Date(until);
+    const currentDate = new Date();
+    const difference =
+      targetDate > currentDate
+        ? targetDate - currentDate
+        : currentDate - targetDate;
 
-  const secs = Math.floor(msecsLeft / 1000) % 60;
-  const mins = Math.floor(msecsLeft / (60 * 1000)) % 60;
-  const hours = Math.floor(msecsLeft / (60 * 60 * 1000)) % 24;
-  const days = Math.floor(msecsLeft / (24 * 60 * 60 * 1000));
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
 
   React.useEffect(() => {
-    const timer = setInterval(() => {
-      setMsecsLeft((prev) => prev - 1000);
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
-    return () => clearInterval(timer);
-  }, []);
+
+    return () => clearTimeout(timer);
+  });
 
   return (
     <div className={styles.CountdownContainer}>
-      <h2 style={{ marginBottom: '1rem' }}>{title}</h2>
+      <h2 style={{ marginBottom: "1rem" }}>{title}</h2>
       <div className={styles.Countdown}>
-        {days && <Counter count={days} label="days" />}
-        {hours && <Counter count={hours} label="hours" />}
-        {mins && <Counter count={mins} label="minutes" />}
-        <Counter count={secs} label="seconds" />
+        {timeLeft.days && <Counter count={timeLeft.days} label="days" />}
+        {timeLeft.hours && <Counter count={timeLeft.hours} label="hours" />}
+        {timeLeft.minutes && (
+          <Counter count={timeLeft.minutes} label="minutes" />
+        )}
+        <Counter count={timeLeft.seconds} label="seconds" />
       </div>
     </div>
   );
 };
-
 
 export default Countdown;
