@@ -69,10 +69,15 @@ export default function GettingHere() {
           Telluride <span className={styles.headerAccent}>KTEX</span>
         </h2>
         <p>
-          {`Telluride--airport code KTEX--a hamlet you might have heard about because of its ski resort, film festivals, or bluegrass, is not a good speedy to get to Silverton.`}
+          {`Telluride--airport code KTEX--a hamlet you might have heard about because of its ski resort, film festivals, or bluegrass, is not a good, speedy way to get to Silverton.`}
         </p>
         <p>
           {`Reasonable airfare is few and far between and the drive typically takes over 2 hours.`}
+        </p>
+        <p>
+          If you are feeling adventurous and packing <i>extremely</i> light, you
+          could head up and over the ridge and end up in Silverton in a
+          sub-marathon distance effort.
         </p>
       </section>
       <section id="DEN" className={styles.section}>
