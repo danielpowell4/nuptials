@@ -181,6 +181,10 @@ export default function Activities() {
           <h3>Animas Forks</h3>
           <p>From our front door to Silverton, CO</p>
         </div>
+        <div>
+          <h3>Outdoor Planetarium</h3>
+          <p>From our front door to Silverton, CO</p>
+        </div>
       </section>
       <section>
         <h2>Funnel Cakes</h2>
