@@ -1,0 +1,24 @@
+.main {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.main p {
+  line-height: 1.15;
+  margin-bottom: 1.15rem;
+}
+
+.section {
+  padding-bottom: 2rem;
+}
+
+.section h1,
+.section h2 {
+  margin-bottom: 1.15rem;
+}
+
+.headerAccent {
+  font-size: 85%;
+  font-style: italic;
+  font-weight: normal;
+}
