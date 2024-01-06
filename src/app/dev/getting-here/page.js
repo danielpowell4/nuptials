@@ -31,14 +31,14 @@ export default function GettingHere() {
           Durango <span className={styles.headerAccent}>DGO</span>
         </h2>
         <p>
-          Durango--airport code DGO--is known to Silvertonians as the 'Big
-          City'. It is the closest airport and is about 50 miles from Silverton.
-          The drive from the airport is about an hour and a half over two chill
-          mountain passes--Coal Bank and Molas.
+          Durango--airport code DGO--is known to Silvertonians as the{" "}
+          {`'Big City'`}. It is the closest airport and is about 50 miles from
+          Silverton. The drive from the airport is about an hour and a half over
+          two chill mountain passes--Coal Bank and Molas.
         </p>
         <p>{`This river town mecca for mountain bikers and folks who like having both a pharmacy and a conventional grocery store has great amenities.`}</p>
         <ul>
-          <li>Lola's</li>
+          <li>{`Lola's`}</li>
           <li>Himalayan Kitchen</li>
           <li>Chang Thai</li>
           <li>James Ranch</li>
