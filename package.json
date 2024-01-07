@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "14.0.3",
     "react": "^18",
     "react-aria-components": "^1.0.0",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remark": "^9.0.0",
+    "remark-html": "^16.0.1",
+    "remark-plain-text": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^8",
