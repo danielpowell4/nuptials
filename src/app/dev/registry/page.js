@@ -1,15 +1,17 @@
 import styles from "@/app/utils.module.css";
 
 export const metadata = {
-  title: "Food | Julia & Dan",
+  title: "Registry | Julia & Dan",
   description:
-    "What food options are available in Silverton, CO for the wedding of Julia & Dan on Sept 7, 2024.",
+    "Respond, if you please to the wedding of Julia & Dan on Sept 7, 2024 in Silverton, CO.",
 };
 
-export default function Food() {
+export default function Registry() {
   return (
     <main className={styles.main}>
-      <h1>Food</h1>
+      <section className={styles.section}>
+        <h1>Registry</h1>
+      </section>
       <section>
         <h2>Thursday</h2>
       </section>

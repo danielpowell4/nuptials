@@ -6,7 +6,245 @@ export const metadata = {
     "Where to stay in Silverton, CO for the wedding of Julia & Dan on Sept 7, 2024.",
 };
 
+const activities = [
+  {
+    name: "Dolores LaChapelle Park",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Bakers Park Trail",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Anvil Flagpole",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Shrine of the Mines",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Kendall Lift Line",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Fairy Trail",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Rabbit Ears to Idaho",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Rainbow Trail",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Mushroom Trail",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Boulder Gulch",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "San Juan Skyway",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Memorial Park",
+    description: "From our front door to Silverton, CO",
+    category: "From Door",
+  },
+  {
+    name: "Molas Lake",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Little Molas",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Ice Lakes Basin",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Columbine Lake",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Ptarmigan Lake",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Highland Mary",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Hematite",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Silver Lake",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Porphyry basin",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Woodchuck basin",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Velocity basin",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Crystal lake",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Lake Emma",
+    description: "From our front door to Silverton, CO",
+    category: "Lakes",
+  },
+  {
+    name: "Kendall",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Turk / Sultan",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Anvil",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Ohio",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Red Mountain 3, 2, 1",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Tower",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Handies",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "King Solomon / Little Giant",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Round Mountain",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Galena",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Treasure Mountain",
+    description: "From our front door to Silverton, CO",
+    category: "Peaks",
+  },
+  {
+    name: "Colorado Trail",
+    description: "From our front door to Silverton, CO",
+    category: "Notable Mentions",
+  },
+  {
+    name: "Richmond Trail ➡️ Camp Bird ➡️ Hayden",
+    description: "From our front door to Silverton, CO",
+    category: "Notable Mentions",
+  },
+  {
+    name: "Hardrock 100",
+    description: "From our front door to Silverton, CO",
+    category: "Notable Mentions",
+  },
+  {
+    name: "Animas Forks",
+    description: "From our front door to Silverton, CO",
+    category: "Notable Mentions",
+  },
+  {
+    name: "Outdoor Planetarium",
+    description: "",
+    category: "Notable Mentions",
+  },
+  {
+    name: "Greene St",
+    description: "From our front door to Silverton, CO",
+    category: "Funnel Cakes",
+  },
+  {
+    name: "Blair St",
+    description: "From our front door to Silverton, CO",
+    category: "Funnel Cakes",
+  },
+  {
+    name: "Train Arrival",
+    description: "From our front door to Silverton, CO",
+    category: "Funnel Cakes",
+  },
+  {
+    name: "Durango",
+    description: "From our front door to Silverton, CO",
+    category: "Funnel Cakes",
+  },
+];
+
 export default function Activities() {
+  const categories = activities.reduce((acc, activity) => {
+    if (!acc[activity.category]) {
+      acc[activity.category] = [];
+    }
+
+    acc[activity.category].push(activity);
+
+    return acc;
+  }, []);
+
   return (
     <main className={styles.main}>
       <h1>Stuff to do</h1>

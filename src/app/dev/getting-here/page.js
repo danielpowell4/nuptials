@@ -141,7 +141,7 @@ export default function GettingHere() {
           </span>
         </h2>
         <p>
-          {`Denver, the capital city of Colorado and home of the DU chem center is not that close to Silverton. A journey of over 350 miles and typically 7-or-so hours will afford you either the opportunity to see Summit County, Palisade--the home of Palisade Peaches--and a drive through Chipotle in Grand Junction or 285 to the Sand Dunes, Monarch Pass, and Gunnison.`}
+          {`Denver, the capital city of Colorado and home of the DU chem center is not that close to Silverton. A journey of over 350 miles and typically 7-or-so hours by car will afford you either the opportunity to see Summit County, Palisade--the home of Palisade Peaches--and a drive-through Chipotle in Grand Junction or 285 to the Sand Dunes, Monarch Pass, and Gunnison.`}
         </p>
         <p>
           {`Unless you already live in Denver or the greater Front Range, we don't recommend you come this way as your first stop in route to the San Juans.`}

@@ -16,9 +16,6 @@ export default function Nav() {
           <Link href="/dev/lodging">Sleeping</Link>
         </li>
         <li>
-          <Link href="/dev/pizza-and-breweries">Eating</Link>
-        </li>
-        <li>
           <Link href="/dev/stuff-to-do">Playing</Link>
         </li>
         <li>
