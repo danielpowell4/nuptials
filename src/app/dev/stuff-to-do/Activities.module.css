@@ -1,4 +1,6 @@
 .pageWrap {
+  --navHeight: 3rem;
+
   max-width: var(--max-width);
   margin: auto;
 }
@@ -13,9 +15,9 @@
   position: sticky;
   align-self: start;
   padding-top: 0;
-  background-color: var(--background);
+  background-color: white;
   z-index: 4; /* above 'main' + flying images */
-  top: 10px; /* calc(var(--navTop) + var(--navHeight) - 10px); */
+  top: 0;
   transition: top 0.3s; /* matches SiteNav */
   border-top: 1px solid var(--hr);
 }
@@ -30,6 +32,7 @@
   min-height: var(--navHeight);
   align-items: center;
   border-bottom: 1px solid var(--hr);
+  list-style-type: none;
 
   /* for scrolling */
   scroll-behavior: smooth;
@@ -52,10 +55,10 @@
     gap: 2rem;
   }
   .scrollContainer__aside {
-    top: calc(var(--navHeight) + 2rem);
-    /* margin-top: 8rem; */
+    top: calc(var(--navHeight) - 10px);
     padding-top: 0;
     border-top: none;
+    background-color: inherit;
   }
   .sectionNav ul {
     padding: 0;

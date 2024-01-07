@@ -1,28 +1,35 @@
-import { Suspense } from "react";
-
 import styles from "./ActivityCategory.module.css";
 
-import { getCategoryActivities } from "./utils";
+import useSWR from "swr";
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 import { CldImage } from "@/components";
 import { Link } from "react-aria-components";
 
-const ActivityCategory = async ({ category }) => {
-  const activities = await getCategoryActivities(category.name);
+const ActivityCategory = ({ category }) => {
+  const { data, error, isLoading } = useSWR(
+    "/api/activities/byCategory?categoryName=" + category.name,
+    fetcher
+  );
 
   return (
-    <section id={`#${category.id}`}>
+    <section id={`${category.id}`} ref={category.ref}>
       <h2>{category.name}</h2>
-      <Suspense fallback={"Loading..."}>
+
+      {isLoading && <p>Loading...</p>}
+
+      {error && <p>Failed to load activities.</p>}
+
+      {data?.activities && (
         <div className={styles.ActivityGrid}>
-          {activities.map((activity) => (
+          {data.activities.map((activity) => (
             <div className={styles.ActivityCard} key={activity.slug}>
               {activity.primary_url ? (
                 <CldImage
                   width="360"
                   height="180"
                   src={activity.primary_url}
-                  alt="Description of my image"
+                  alt={`Sneak peek of ${activity.name}`}
                   crop="fill"
                   sizes="100vw"
                   gravity="auto"
@@ -47,7 +54,7 @@ const ActivityCategory = async ({ category }) => {
             </div>
           ))}
         </div>
-      </Suspense>
+      )}
     </section>
   );
 };

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hook/intersection-observer": "^3.1.1",
     "gray-matter": "^4.0.3",
     "next": "14.0.3",
     "next-cloudinary": "^5.18.0",
@@ -17,7 +18,8 @@
     "react-dom": "^18",
     "remark": "^9.0.0",
     "remark-html": "^16.0.1",
-    "remark-plain-text": "^0.2.0"
+    "remark-plain-text": "^0.2.0",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "eslint": "^8",
