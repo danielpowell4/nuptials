@@ -1,0 +1,9 @@
+.pageWrap {
+  max-width: var(--max-width);
+  margin: auto;
+  min-height: calc(100dvh - 123px);
+}
+
+.main {
+  margin-top: 1rem;
+}
