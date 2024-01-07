@@ -1,18 +1,11 @@
+import { Suspense } from "react";
+
 import styles from "./ActivityCategory.module.css";
 
-import { Link } from "react-aria-components";
 import { getCategoryActivities } from "./utils";
 
-const { Suspense } = require("react");
-
-const ActivityCard = ({ activity }) => {
-  return (
-    <div className={styles.ActivityCard}>
-      <h3>{activity.name}</h3>
-      <Link href={`/dev/stuff-to-do/${activity.slug}`}>View details</Link>
-    </div>
-  );
-};
+import { CldImage } from "@/components";
+import { Link } from "react-aria-components";
 
 const ActivityCategory = async ({ category }) => {
   const activities = await getCategoryActivities(category.name);
@@ -23,7 +16,35 @@ const ActivityCategory = async ({ category }) => {
       <Suspense fallback={"Loading..."}>
         <div className={styles.ActivityGrid}>
           {activities.map((activity) => (
-            <ActivityCard key={activity.name} activity={activity} />
+            <div className={styles.ActivityCard} key={activity.slug}>
+              {activity.primary_url ? (
+                <CldImage
+                  width="360"
+                  height="180"
+                  src={activity.primary_url}
+                  alt="Description of my image"
+                  crop="fill"
+                  sizes="100vw"
+                  gravity="auto"
+                  style={{
+                    border: "1px solid var(--hr)",
+                    borderRadius: "4px",
+                  }}
+                />
+              ) : (
+                <div
+                  style={{
+                    backgroundColor: "var(--hr)",
+                    width: 360,
+                    height: 180,
+                  }}
+                />
+              )}
+              <h3>{activity.name}</h3>
+              <Link href={`/dev/stuff-to-do/${activity.slug}`}>
+                View details
+              </Link>
+            </div>
           ))}
         </div>
       </Suspense>
