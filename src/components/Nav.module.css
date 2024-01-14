@@ -10,7 +10,7 @@
   margin-bottom: 1rem;
   max-width: var(--max-width);
   width: 100%;
-  margin: auto;
+  margin: 0 auto 1rem;
 }
 
 .nav ul {
