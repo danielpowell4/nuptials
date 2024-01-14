@@ -55,7 +55,7 @@ export default function Home() {
       <h3>
         <Link href="/getting-here">
           <span role="img" aria-label="Train">
-            🚂
+            🫏🚂🛩️
           </span>{" "}
           Getting Here
         </Link>
@@ -67,7 +67,7 @@ export default function Home() {
       <h3>
         <Link href="/getting-here">
           <span role="img" aria-label="Tent">
-            🏕️
+            🏕️🏡🏨
           </span>{" "}
           Where to Stay
         </Link>
@@ -82,7 +82,7 @@ export default function Home() {
         </Link>
       </h3>
       <h3>
-        <Link href="/getting-here">Schedule of Events</Link>
+        <Link href="/getting-here">📋 Schedule of Events</Link>
       </h3>
       <h2>What we need from you</h2>
       RSVP
