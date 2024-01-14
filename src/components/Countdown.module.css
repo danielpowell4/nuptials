@@ -8,6 +8,7 @@
 .Countdown {
   display: flex;
   gap: 1.15rem;
+  margin-bottom: 1.15rem;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
