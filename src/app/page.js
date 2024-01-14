@@ -3,6 +3,7 @@ import homeStyles from "./page.module.css";
 
 import Countdown from "@/components/Countdown";
 import { Link } from "react-aria-components";
+import { CldImage } from "@/components";
 
 export default function Home() {
   return (
@@ -36,9 +37,11 @@ export default function Home() {
         weeks. Dan, who did not know her name, said {`"yes"`} across a long
         table of folks he was tutoring in the DU chem center.
       </p>
+      <CldImage width={400} height={400} crop="fill"sizes="100vw" gravity="auto" alt={`first-date`} src={`https://res.cloudinary.com/dano-photos/image/upload/v1705262564/F013D4F7-07B1-44B7-A88D-4264CCA26F2C_1_105_c_lwlmwb.jpg`} />
+  
       <h2>{`How it's going`}</h2>
       <p>Pretty swell!</p>
-      <p>Shortly after moving in together at DU, we got a dog.</p>
+      <p>Shortly after moving in together at DU, we got a dog.</p> <CldImage width={400} height={400} crop="fill"sizes="100vw" gravity="auto" alt={`beacon`} src={`https://res.cloudinary.com/dano-photos/image/upload/v1705262061/757BD521-54D4-46E5-95C9-2ACF8D09CFBC_1_105_c_wbcg9b.jpg`} />
       <p>
         {`Then we spent another couple years in Denver's Cap Hill neighborhood loading up the car with everything we owned and crashing at Tim's place in Summit on the weekends.`}
       </p>
@@ -50,7 +53,9 @@ export default function Home() {
         We planned to rent in Silverton {`"for 6 months"`} having never come
         here together. In 2022, we bought a place.
       </p>
-      <p>In 2023, we got another dog.</p>
+      <p>In 2023, we got another dog.</p> <CldImage width={400} height={400} crop="fill"sizes="100vw" gravity="auto" alt={`oslo`} src={`https://res.cloudinary.com/dano-photos/image/upload/v1705260338/D326C48C-F195-4618-8113-CD5ACFAA27EA_1_105_c_xcmcc4.jpg`} />
+      <p>Dan proposed.</p> <CldImage width={400} height={400} crop="fill"sizes="100vw" gravity="auto" alt={`proposal`} src={`https://res.cloudinary.com/dano-photos/image/upload/v1705260585/4B081961-9074-451A-9818-7BAE33A2A397_1_105_c_aqtnq6.jpg`} />
+
       <h2>{`What to expect`}</h2>
       <h3>
         <Link href="/getting-here">
