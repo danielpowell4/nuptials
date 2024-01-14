@@ -99,7 +99,8 @@ export default function Home() {
           In 2022, we bought a place.
         </p>
         <p>
-          In 2023, we got a second dog, Dan proposed and we took some pictures.
+          In 2023, we got a second dog and Dan proposed at{" "}
+          <Link href="/stuff-to-do/columbine-lake">Columbine Lake.</Link>
         </p>
         <div
           style={{
@@ -113,7 +114,6 @@ export default function Home() {
             width={280}
             height={280}
             crop="fill"
-            sizes="100vw"
             gravity="auto"
             alt={`oslo`}
             style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
@@ -124,9 +124,9 @@ export default function Home() {
             width={280}
             height={280}
             crop="fill"
-            sizes="100vw"
             gravity="auto"
             alt={`proposal`}
+            quality={100}
             style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
             src={`https://res.cloudinary.com/dano-photos/image/upload/v1705260585/4B081961-9074-451A-9818-7BAE33A2A397_1_105_c_aqtnq6.jpg`}
           />
