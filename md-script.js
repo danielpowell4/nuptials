@@ -252,7 +252,7 @@ position: ${position}
 Copy goes here
 `;
 
-  const dirPath = path.join(__dirname, "src/app/dev/stuff-to-do/activities");
+  const dirPath = path.join(__dirname, "src/app/stuff-to-do/activities");
   const filePath = path.join(dirPath, `${slug}.md`);
 
   if (!fs.existsSync(dirPath)) {

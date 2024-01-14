@@ -5,21 +5,19 @@ import styles from "./Nav.module.css";
 export default function Nav() {
   return (
     <nav className={styles.nav}>
+      <Link href="/">J & D Forever</Link>
       <ul>
         <li>
-          <Link href="/dev">Home</Link>
+          <Link href="/getting-here">Traveling</Link>
         </li>
         <li>
-          <Link href="/dev/getting-here">Traveling</Link>
+          <Link href="/lodging">Sleeping</Link>
         </li>
         <li>
-          <Link href="/dev/lodging">Sleeping</Link>
+          <Link href="/stuff-to-do">Playing</Link>
         </li>
         <li>
-          <Link href="/dev/stuff-to-do">Playing</Link>
-        </li>
-        <li>
-          <Link href="/dev/schedule">Schedule</Link>
+          <Link href="/schedule">Schedule</Link>
         </li>
         <li>
           <Link
@@ -30,7 +28,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/dev/rsvp">RSVP</Link>
+          <Link href="/rsvp">RSVP</Link>
         </li>
       </ul>
     </nav>

@@ -10,18 +10,10 @@ export default function Rsvp() {
   return (
     <main className={styles.main}>
       <h1>RSVP</h1>
-      <section>
-        <h2>Thursday</h2>
-      </section>
-      <section>
-        <h2>Friday</h2>
-      </section>
-      <section>
-        <h2>Saturday</h2>
-      </section>
-      <section>
-        <h2>Sunday</h2>
-      </section>
+      <p>
+        Check back soon so we can collect your preferred contact info and
+        official response to our grand San Juan soiree.
+      </p>
     </main>
   );
 }

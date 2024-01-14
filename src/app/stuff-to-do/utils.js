@@ -7,7 +7,7 @@ import toPlainText from "remark-plain-text";
 
 const activitiesDirectory = path.join(
   process.cwd(),
-  "src/app/dev/stuff-to-do/activities"
+  "src/app/stuff-to-do/activities"
 );
 
 export function getAllActivitySlugs() {

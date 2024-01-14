@@ -30,10 +30,10 @@ export default async function ActivityPage({ params: { slug } }) {
       <div className={styles.pageWrap}>
         <Breadcrumbs>
           <Breadcrumb>
-            <Link href="/dev/stuff-to-do">Playing</Link>
+            <Link href="/stuff-to-do">Playing</Link>
           </Breadcrumb>
           <Breadcrumb>
-            <Link href={`/dev/stuff-to-do#${parameterize(activity.category)}`}>
+            <Link href={`/stuff-to-do#${parameterize(activity.category)}`}>
               {activity.category}
             </Link>
           </Breadcrumb>

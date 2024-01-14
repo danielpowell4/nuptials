@@ -48,9 +48,7 @@ const ActivityCategory = ({ category }) => {
                 />
               )}
               <h3>{activity.name}</h3>
-              <Link href={`/dev/stuff-to-do/${activity.slug}`}>
-                View details
-              </Link>
+              <Link href={`/stuff-to-do/${activity.slug}`}>View details</Link>
             </div>
           ))}
         </div>
