@@ -2,6 +2,7 @@ import styles from "@/app/utils.module.css";
 import homeStyles from "./page.module.css";
 
 import Countdown from "@/components/Countdown";
+import { Link } from "react-aria-components";
 
 export default function Home() {
   return (
@@ -16,18 +17,17 @@ export default function Home() {
           until={"2014-05-02T00:00:00.000Z"}
         />
       </div>
-
       <p>
         Julia Marie and Daniel Micah are overjoyed to invite you to join us as
         we celebrate our first 10 years together and our next 10,000 years to
         come.
       </p>
-
       <h2>{`How it started`}</h2>
       <p>
-        Unofficially it started about a year before that when Dan asked Julia if
-        she wanted to dance at a Head in the Heart concert and then promptly ran
-        away {`(thinking she'd follow)`}.
+        Unofficially it started sometime in the spring of 2013 at a Head in the
+        Heart concert. Dan asked Julia if she wanted to dance and then promptly
+        ran away {`(thinking she'd follow)`}. She says she did but Dan was too
+        fast.
       </p>
       <p>
         Officially it started in the lead up to a sorority formal on May 1,
@@ -36,10 +36,9 @@ export default function Home() {
         weeks. Dan, who did not know her name, said {`"yes"`} across a long
         table of folks he was tutoring in the DU chem center.
       </p>
-
       <h2>{`How it's going`}</h2>
       <p>Pretty swell!</p>
-      <p>Shortly after moving in together at DU. We got a dog.</p>
+      <p>Shortly after moving in together at DU, we got a dog.</p>
       <p>
         {`Then we spent another couple years in Denver's Cap Hill neighborhood loading up the car with everything we owned and crashing at Tim's place in Summit on the weekends.`}
       </p>
@@ -53,7 +52,40 @@ export default function Home() {
       </p>
       <p>In 2023, we got another dog.</p>
       <h2>{`What to expect`}</h2>
-      <p></p>
+      <h3>
+        <Link href="/getting-here">
+          <span role="img" aria-label="Train">
+            🚂
+          </span>{" "}
+          Getting Here
+        </Link>
+      </h3>
+      <p>
+        Silverton, Colo is far away from everything. Though often inconvenient
+        that is sort of the point.
+      </p>
+      <h3>
+        <Link href="/getting-here">
+          <span role="img" aria-label="Tent">
+            🏕️
+          </span>{" "}
+          Where to Stay
+        </Link>
+      </h3>
+      <p>We are stoked that our friends at the Wyman.</p>
+      <h3>
+        <Link href="/getting-here">
+          <span role="img" aria-label="Dogs in Mountains">
+            🐕🏔️🐕‍🦺
+          </span>{" "}
+          Where to Play
+        </Link>
+      </h3>
+      <h3>
+        <Link href="/getting-here">Schedule of Events</Link>
+      </h3>
+      <h2>What we need from you</h2>
+      RSVP
     </main>
   );
 }

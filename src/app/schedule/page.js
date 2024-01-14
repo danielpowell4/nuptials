@@ -47,7 +47,7 @@ export default function Schedule() {
         <h3>Après Welcome Drinks w/ Small Eats</h3>
         <p>
           Kick off our 10-year celebration with us on the scenic{" "}
-          <Link href="https://maps.app.goo.gl/RceECeW6fkU9QcRK7">
+          <Link href="https://www.instagram.com/coffeebearsilverton/">
             Coffee Bear
           </Link>{" "}
           rooftop for a joyous reunion featuring welcome drinks and small eats.
