@@ -9,7 +9,10 @@ import utilStyles from "@/app/utils.module.css";
 import NextLink from "next/link";
 import { useSearchParams } from "next/navigation";
 
+import { CldImage } from "@/components";
+
 import ActivityCategory from "./ActivityCategory";
+import { Link } from "react-aria-components";
 
 const intersectionObsOptions = {
   threshold: [0.05, 0.1, 0.2, 0.25, 0.5, 0.75, 0.8, 0.9, 0.95],
@@ -141,6 +144,28 @@ export default function Activities() {
     <div className={styles.pageWrap}>
       <section className={utilStyles.section}>
         <h1>Stuff to do</h1>
+        <p style={{ marginBottom: "1.15rem" }}>
+          We came to and settled in Silverton because of these mountains.
+          Depending on your exact spot in our townsite, you can see Kendall,
+          Snowden, Turk, Sultan, Bear, Anvil, Ohio, Red, Tower, or Galena.
+          Another many dozen are just out of view. Each is accessible by foot
+          even if not every option is easy to get to.
+        </p>
+
+        <p style={{ marginBottom: "1.15rem" }}>
+          You can have a great time without doing something massive or fully
+          acclimating to the air up here at 9,318{`'`}.
+        </p>
+
+        <CldImage
+          src="https://res.cloudinary.com/dano-photos/image/upload/v1705256089/309484944_661373995329950_8855128189103685262_n_kinltp.jpg"
+          alt="Silly Silverton"
+          width={1200}
+          height={900}
+          crop="fill"
+          gravity="auto"
+          responsive
+        />
       </section>
 
       <div className={styles.scrollContainer}>
