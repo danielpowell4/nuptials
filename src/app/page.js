@@ -59,25 +59,32 @@ export default function Home() {
       <h2>{`What to expect`}</h2>
       <h3>
         <Link href="/getting-here">
-          <span role="img" aria-label="Train">
-            🫏🚂🛩️
+          <span role="img" aria-label="Burro + Train + Jet">
+            🫏 🚂 🛩️
           </span>{" "}
           Getting Here
         </Link>
       </h3>
       <p>
         Silverton, Colo is far away from everything. Though often inconvenient
-        that is sort of the point.
+        that is sort of the point. We recommend flying into{" "}
+        <Link href="/getting-here#DGO">Durango</Link> or{" "}
+        <Link href="/getting-here#MTJ">Montrose</Link> or driving in from the
+        front range and stopping a few times along the way.
       </p>
       <h3>
-        <Link href="/getting-here">
-          <span role="img" aria-label="Tent">
+        <Link href="/lodging">
+          <span role="img" aria-label="Tent + House + Hotel">
             🏕️🏡🏨
           </span>{" "}
           Where to Stay
         </Link>
       </h3>
-      <p>We are stoked that our friends at the Wyman.</p>
+      <p>
+        We are stoked that our friends at the Wyman have created a beautiful
+        oasis just a few blocks from our place. We recommend grabbing a room
+        while they last and checking out the bunk room for an extra good time.
+      </p>
       <h3>
         <Link href="/getting-here">
           <span role="img" aria-label="Dogs in Mountains">
@@ -86,9 +93,19 @@ export default function Home() {
           Where to Play
         </Link>
       </h3>
+      <p>
+        The outdoors hold a special place in our heart. You can start and end a
+        legendary 100-mile course from town. You can also enjoy a local park,
+        river front or mountain drive.
+      </p>
       <h3>
         <Link href="/getting-here">📋 Schedule of Events</Link>
       </h3>
+      <p>
+        First official event is on Friday, September 6, 2024 with the nuptials
+        and jamboree on September 7, 2024. If you are unsure if you have a +1,
+        text us. You probably do.
+      </p>
       <h2>What we need from you</h2>
       RSVP
     </main>
