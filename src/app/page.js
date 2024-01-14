@@ -25,22 +25,23 @@ export default function Home() {
 
       <h2>{`How it started`}</h2>
       <p>
+        Unofficially it started about a year before that when Dan asked Julia if
+        she wanted to dance at a Head in the Heart concert and then promptly ran
+        away {`(thinking she'd follow)`}.
+      </p>
+      <p>
         Officially it started in the lead up to a sorority formal on May 1,
         2014. Julia was fresh off a breakup and in search of a date. Dan was
         about to graduate and insisted he was going to move to Portland in a few
         weeks. Dan, who did not know her name, said {`"yes"`} across a long
         table of folks he was tutoring in the DU chem center.
       </p>
-      <p>
-        Unofficially it started about a year before that when Dan asked Julia if
-        she wanted to dance at a Head in the Heart concert and then promptly ran
-        away {`(thinking she'd follow)`}.
-      </p>
+
       <h2>{`How it's going`}</h2>
       <p>Pretty swell!</p>
       <p>Shortly after moving in together at DU. We got a dog.</p>
       <p>
-        {`Then we spent another couple years in Denver's Cap Hill neighborhood loading up the car with everything we owned and crashing at Tim's place in Summit.`}
+        {`Then we spent another couple years in Denver's Cap Hill neighborhood loading up the car with everything we owned and crashing at Tim's place in Summit on the weekends.`}
       </p>
       <p>
         In 2019, Dan wanted to be a tech star and move to SF. Julia had better
@@ -50,8 +51,9 @@ export default function Home() {
         We planned to rent in Silverton {`"for 6 months"`} having never come
         here together. In 2022, we bought a place.
       </p>
-      <p>In 2023, we got another extra dog.</p>
+      <p>In 2023, we got another dog.</p>
       <h2>{`What to expect`}</h2>
+      <p></p>
     </main>
   );
 }
