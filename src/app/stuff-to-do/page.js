@@ -147,9 +147,9 @@ export default function Activities() {
         <p style={{ marginBottom: "1.15rem" }}>
           We came to and settled in Silverton because of these mountains.
           Depending on your exact spot in our townsite, you can see Kendall,
-          Snowden, Turk, Sultan, Bear, Anvil, Ohio, Red, Tower, or Galena.
-          Another many dozen are just out of view. Each is accessible by foot
-          even if not every option is easy to get to.
+          Snowden, Turk, Sultan, Bear, South Lookout, Anvil, Ohio, Red 3, Tower,
+          or Galena. Another many dozen are just out of view. Each is accessible
+          by foot even if not every option is easy to get to.
         </p>
 
         <p style={{ marginBottom: "1.15rem" }}>
@@ -160,11 +160,12 @@ export default function Activities() {
         <CldImage
           src="https://res.cloudinary.com/dano-photos/image/upload/v1705256089/309484944_661373995329950_8855128189103685262_n_kinltp.jpg"
           alt="Silly Silverton"
-          width={1200}
-          height={900}
+          width={1100}
+          height={825}
           crop="fill"
           gravity="auto"
           responsive
+          sx={{ maxWidth: "100%" }}
         />
       </section>
 
