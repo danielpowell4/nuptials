@@ -3,7 +3,7 @@ import homeStyles from "./page.module.css";
 
 import Countdown from "@/components/Countdown";
 import { Link } from "react-aria-components";
-import { CldImage } from "@/components";
+import { CldImage, Spacer } from "@/components";
 
 export default function Home() {
   return (
@@ -234,6 +234,8 @@ export default function Home() {
           Dan and Julia
         </p>
       </section>
+
+      <Spacer />
     </main>
   );
 }

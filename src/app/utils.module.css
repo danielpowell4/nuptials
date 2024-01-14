@@ -51,6 +51,6 @@
   position: sticky;
   top: 0;
   padding: 0.5rem;
-  background-color: rgb(var(--background-end-rgb));
+  background-color: var(--background-start);
   z-index: 2;
 }

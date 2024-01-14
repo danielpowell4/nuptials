@@ -8,27 +8,20 @@
     BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color: #181818;
+  --background-start: #ebe9e4;
+  --background-end: #ddd1c2;
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-
-  --hr: rgba(0, 0, 0, 0.1);
-  --accent-light: #d4c6e6;
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --hr: #8b745f;
+  --accent-light: #989082;
+  --accent-alt: #916d4f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-color: 255, 255, 255;
+    --background-start: 0, 0, 0;
+    --background-end: 0, 0, 0;
   }
 }
 
@@ -45,13 +38,9 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color);
+  background: linear-gradient(to bottom, transparent, var(--background-end))
+    var(--background-start);
 
   font: var(--body-font);
   font-weight: 400;

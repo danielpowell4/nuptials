@@ -1,6 +1,6 @@
 import styles from "@/app/utils.module.css";
 import { Link } from "react-aria-components";
-import { CldImage } from "@/components";
+import { CldImage, Spacer } from "@/components";
 
 export const metadata = {
   title: "Schedule | Julia & Dan",
@@ -201,7 +201,7 @@ export default function Schedule() {
           downstairs at the Wyman before we head out back to the real world.
         </p>
       </section>
-      <div style={{ minHeight: 420 }}></div>
+      <Spacer />
     </main>
   );
 }
