@@ -22,7 +22,12 @@ export default function Nav() {
           <Link href="/dev/schedule">Schedule</Link>
         </li>
         <li>
-          <Link href="/dev/registry">Registry</Link>
+          <Link
+            href="https://withjoy.com/julia-and-dan-eclr2u0s9o002n01zlaa5t1k0ps/registry"
+            target="_blank"
+          >
+            Registry
+          </Link>
         </li>
         <li>
           <Link href="/dev/rsvp">RSVP</Link>

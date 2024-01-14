@@ -151,6 +151,7 @@ export default function Activities() {
                 <li key={id} data-section-id={id}>
                   <NextLink
                     href={`#${id}`}
+                    scroll
                     className={[
                       styles.sectionNav__link,
                       categoryIndex === activeCategoryIndex &&

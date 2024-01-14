@@ -5,7 +5,6 @@
 }
 
 .main p {
-  line-height: 1.15;
   margin-bottom: 1.15rem;
 }
 
@@ -27,4 +26,31 @@
 .list {
   list-style: disc;
   padding-left: 1.15rem;
+}
+
+.detailList {
+  --labelWidth: 5.5rem;
+
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.15rem;
+}
+
+.detailList li {
+  display: flex;
+  gap: 1rem;
+  justify-content: baseline;
+}
+
+.detailList li label {
+  flex: 0 0 var(--labelWidth);
+  text-align: right;
+}
+
+.stickySectionHeader {
+  position: sticky;
+  top: 0;
+  padding: 0.5rem;
+  background-color: rgb(var(--background-end-rgb));
+  z-index: 2;
 }

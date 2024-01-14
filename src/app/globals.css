@@ -1,38 +1,19 @@
+@import url("https://use.typekit.net/gaz4pla.css");
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --body-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --body-font: sans-serif, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+    Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
 
   --hr: rgba(0, 0, 0, 0.1);
   --accent-light: #d4c6e6;
@@ -48,31 +29,6 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
   }
 }
 
@@ -96,7 +52,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
   font: var(--body-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.875rem;
 }
 
 a {
@@ -127,9 +88,38 @@ blockquote::before {
   }
 }
 
+h1 {
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.65rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.15rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1.15rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 800;
+}
+
 .react-aria-Link {
   color: var(--link-color);
-  font-size: 18px;
   transition: all 200ms;
   text-decoration: underline;
   cursor: pointer;
