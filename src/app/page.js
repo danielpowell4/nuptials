@@ -224,7 +224,7 @@ export default function Home() {
       </section>
       <section className={homeStyles.section}>
         <p>
-          We're looking forward to celebrating with each of you. Your presence
+          We are looking forward to celebrating with each of you. Your presence
           means the world to us!
         </p>
 
