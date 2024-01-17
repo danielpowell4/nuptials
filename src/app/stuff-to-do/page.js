@@ -75,14 +75,14 @@ export default function Activities() {
 
   const categories = [
     {
-      id: "from-door",
-      name: "From Door",
-      ref: fromDoorRef,
-    },
-    {
       id: "lakes",
       name: "Lakes",
       ref: lakesRef,
+    },
+    {
+      id: "from-door",
+      name: "From Door",
+      ref: fromDoorRef,
     },
     {
       id: "peaks",

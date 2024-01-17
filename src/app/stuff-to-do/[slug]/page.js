@@ -58,7 +58,7 @@ export default async function ActivityPage({ params: { slug } }) {
                 height={400}
                 width={800}
                 crop="fill"
-                gravity="auto"
+                gravity={activity.primary_url_gravity ?? "auto"}
               />
             ) : null}
 

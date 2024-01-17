@@ -9,3 +9,5 @@ primary_url: "https://res.cloudinary.com/dano-photos/image/upload/v1704661663/Nu
 This local staple goes straight up the 'S-hill'. Over the years we've seen both a Trump and a rainbow flag hoisted.
 
 You catch a light trail from 12th street and head up, up, up this initial Strava segment (<a href="https://www.strava.com/segments/9684094">https://www.strava.com/segments/9684094</a>). After you top out the first hill, you head down then up a shoulder towards the cliffs that can be seen above the Shrine to find a flagpole jammed into the rocks.
+
+<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="2692463364" data-style="standard"></div><script src="https://strava-embeds.com/embed.js"></script>
