@@ -28,6 +28,12 @@
   }
 }
 
+@media screen and (min-width: 700px) {
+  :root {
+    --fixedNavHeight: 0px;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
