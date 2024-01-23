@@ -17,7 +17,7 @@
   --accent-alt: #916d4f;
 
   --navHeight: 65px;
-  --fixedNavHeight: 98px;
+  --fixedNavHeight: 128px;
 }
 
 @media (prefers-color-scheme: dark) {
