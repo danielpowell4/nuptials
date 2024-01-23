@@ -34,7 +34,7 @@ const FixedFooter = () => {
               key={href}
               className={[
                 isActive && styles.ActiveItem,
-                accent && StyleSheet.AccentItem,
+                accent && styles.AccentItem,
               ].filter(Boolean)}
             >
               <Link href={href} {...linkProps}>

@@ -159,7 +159,7 @@ export default function Home() {
         </h3>
         <p>
           We are stoked that our friends at the Wyman have created a beautiful
-          oasis just a few blocks from our place. We recommend grabbing a room
+          haven just a few blocks from our place. We recommend grabbing a room
           while they last and checking out the bunk room for an extra good time.
         </p>
         <h3>
