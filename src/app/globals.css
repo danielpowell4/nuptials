@@ -15,6 +15,9 @@
   --hr: #8b745f;
   --accent-light: #989082;
   --accent-alt: #916d4f;
+
+  --navHeight: 65px;
+  --fixedNavHeight: 98px;
 }
 
 @media (prefers-color-scheme: dark) {

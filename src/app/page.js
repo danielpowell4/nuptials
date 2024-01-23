@@ -223,10 +223,7 @@ export default function Home() {
         </p>
       </section>
       <section className={homeStyles.section}>
-        <p>
-          We are looking forward to celebrating with each of you. Your presence
-          means the world to us!
-        </p>
+        <p>We are looking forward to celebrating with each of you.</p>
 
         <p>
           To the moon and back,

@@ -46,9 +46,9 @@ const Countdown = ({ title, until }) => {
     <div className={styles.CountdownContainer}>
       <h2 style={{ marginBottom: "1rem" }}>{title}</h2>
       <div className={styles.Countdown}>
-        {timeLeft.days && <Counter count={timeLeft.days} label="days" />}
-        {timeLeft.hours && <Counter count={timeLeft.hours} label="hours" />}
-        {timeLeft.minutes && (
+        {timeLeft.days > 0 && <Counter count={timeLeft.days} label="days" />}
+        {timeLeft.hours > 0 && <Counter count={timeLeft.hours} label="hours" />}
+        {timeLeft.minutes > 0 && (
           <Counter count={timeLeft.minutes} label="minutes" />
         )}
         <Counter count={timeLeft.seconds} label="seconds" />

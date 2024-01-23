@@ -14,10 +14,16 @@
 }
 
 .nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  list-style: none;
-  gap: 1rem;
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+  }
 }
