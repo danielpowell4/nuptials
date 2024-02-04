@@ -1,6 +1,6 @@
 import { Button as RACButton } from "react-aria-components";
 import "./Button.css";
 
-export function Button(props) {
+export default function Button(props) {
   return <RACButton {...props} />;
 }

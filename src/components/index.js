@@ -7,6 +7,8 @@ export { default as Footer } from "./Footer";
 export { default as Form } from "./Form";
 export { default as LinkButton } from "./LinkButton";
 export { default as Nav } from "./Nav";
+export { default as RadioGroup } from "./RadioGroup";
 export { default as ScrollWatcher } from "./ScrollWatcher";
 export { default as Spacer } from "./Spacer";
+export { default as TextArea } from "./TextArea";
 export { default as TextField } from "./TextField";

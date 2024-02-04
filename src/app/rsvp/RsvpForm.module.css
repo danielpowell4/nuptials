@@ -1,0 +1,25 @@
+.formSection {
+  margin-bottom: 1.15rem;
+}
+
+.unstyledList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unstyledList li {
+  margin-bottom: 1.15rem;
+}
+
+.unstyledList li:last-of-type {
+  margin-bottom: 0;
+}
+
+.GuestItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 0.5rem;
+}

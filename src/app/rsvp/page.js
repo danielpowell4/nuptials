@@ -1,5 +1,7 @@
 import styles from "@/app/utils.module.css";
 
+import RsvpForm from "./RsvpForm";
+
 export const metadata = {
   title: "RSVP | Julia & Dan",
   description:
@@ -9,11 +11,11 @@ export const metadata = {
 export default function Rsvp() {
   return (
     <main className={styles.main}>
-      <h1>RSVP</h1>
+      <h1>{`Répondez s'il vous plaît`}</h1>
       <p>
-        Check back soon so we can collect your preferred contact info and
-        official response to our grand San Juan soiree.
+        Respond, if you please to your invitation to our grand San Juan soiree.
       </p>
+      <RsvpForm />
     </main>
   );
 }

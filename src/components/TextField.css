@@ -47,3 +47,8 @@
     }
   }
 }
+
+.react-aria-TextArea {
+  font-size: 1rem;
+  font: inherit;
+}
