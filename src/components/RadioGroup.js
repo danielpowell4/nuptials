@@ -25,7 +25,11 @@ export default function RadioGroup({
     <AriaRadioGroup {...props}>
       <Label>{label}</Label>
       {children}
-      {description && <Text slot="description">{description}</Text>}
+      {description && (
+        <Text slot="description" style={{ whiteSpace: "pre" }}>
+          {description}
+        </Text>
+      )}
       <FieldError>{errorMessage}</FieldError>
     </AriaRadioGroup>
   );

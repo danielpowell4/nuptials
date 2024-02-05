@@ -13,11 +13,12 @@ const emptyGuest = {
   friday: "yes",
   saturday: "yes",
   dietaryNote: "",
-  message: "",
 };
 
 const initialValues = {
   guests: [emptyGuest],
+  message: "",
+  carpoolPool: "no",
 };
 
 export default function RsvpForm() {
@@ -67,6 +68,7 @@ export default function RsvpForm() {
                           {values.guests.map((guest, index) => (
                             <li key={index} className={formStyles.GuestItem}>
                               <TextField
+                                isRequired
                                 label="First name"
                                 name={`guests.${index}.firstName`}
                                 value={guest.firstName}
@@ -193,29 +195,41 @@ export default function RsvpForm() {
                                     )
                                   }
                                 />
-                                <TextArea
-                                  label="Message for the Happy Couple"
-                                  name={`guests.${index}.message`}
-                                  placeholder="HAGS see you in September."
-                                  description={
-                                    "Any other information you'd like to share or ask about!"
-                                  }
-                                  value={guest.message}
-                                  style={{ maxWidth: "26rem", width: "100%" }}
-                                  onChange={(val) =>
-                                    setFieldValue(
-                                      `guests.${index}.message`,
-                                      val
-                                    )
-                                  }
-                                  onBlur={() =>
-                                    setFieldTouched(`guests.${index}.message`)
-                                  }
-                                />
                               </li>
                             );
                           })}
                         </ul>
+                      </div>
+                      <div className={formStyles.formSection}>
+                        <h2>General</h2>
+                        <RadioGroup
+                          label={"Join Carpool Pool"}
+                          name={`carpoolPool`}
+                          orientation="vertical"
+                          onChange={(val) => {
+                            setFieldValue(`carpoolPool`, val);
+                            setFieldTouched(`carpoolPool`);
+                          }}
+                          value={values.carpoolPool}
+                          description={
+                            "Would you like to be added to a carpool pool?\nWe will connect you with other folks to coordinate transportation for the weekend."
+                          }
+                        >
+                          <Radio value="yes">Yes</Radio>
+                          <Radio value="no">No</Radio>
+                        </RadioGroup>
+                        <TextArea
+                          label="Message for the Happy Couple"
+                          name={`message`}
+                          placeholder="HAGS see you in September."
+                          description={
+                            "Any other information you'd like to share or ask about!"
+                          }
+                          value={values.message}
+                          style={{ maxWidth: "26rem", width: "100%" }}
+                          onChange={(val) => setFieldValue("message", val)}
+                          onBlur={() => setFieldTouched("message")}
+                        />
                       </div>
                     </>
                   ) : (
