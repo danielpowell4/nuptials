@@ -34,7 +34,13 @@ export default function RsvpForm() {
         });
 
         return (
-          <Form onInvalid={() => {}} onReset={() => {}} onSubmit={() => {}}>
+          <Form
+            onInvalid={() => {}}
+            onReset={() => {}}
+            onSubmit={() => {
+              alert(`Submitted with ${JSON.stringify(values, null, 2)}`);
+            }}
+          >
             <FieldArray
               name="guests"
               render={(arrayHelpers) => (

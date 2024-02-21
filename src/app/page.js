@@ -19,9 +19,8 @@ export default function Home() {
         />
       </div>
       <p>
-        Julia Marie and Daniel Micah are overjoyed to invite you to join us as
-        we celebrate our first 10 years together and our next 10,000 years to
-        come.
+        Julia Marie and Daniel Micah are giddy to invite you to join us as we
+        celebrate our first 10 years together and our next 10,000 years to come.
       </p>
       <section className={homeStyles.section}>
         <h2 className={styles.stickySectionHeader}>{`How it started`}</h2>
@@ -77,7 +76,7 @@ export default function Home() {
         <p>
           Shortly after moving in together at DU, we got a dog. Beacon has since
           completed the Colorado Trail, skied off the seven summits and
-          collected his fair share of butter off the counter.
+          collected an ample amount of butter off the counter.
         </p>{" "}
         <CldImage
           width={260}

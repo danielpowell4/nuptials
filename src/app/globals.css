@@ -51,7 +51,7 @@ body {
   background: linear-gradient(to bottom, transparent, var(--background-end))
     var(--background-start);
 
-  font: var(--body-font);
+  font-family: var(--body-font);
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
