@@ -20,13 +20,13 @@
   --fixedNavHeight: 128px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-color: 255, 255, 255;
     --background-start: 0, 0, 0;
     --background-end: 0, 0, 0;
   }
-}
+} */
 
 @media screen and (min-width: 700px) {
   :root {
