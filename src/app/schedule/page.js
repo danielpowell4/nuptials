@@ -21,7 +21,7 @@ export default function Schedule() {
         <p>
           For those who can swing such a thing, we think it would be a stellar
           idea to take off a few extra days off to link up the two weekends for
-          an extended stay in the San Juan Mountains.
+          an extended stay in the San Juan Mountains. Text us!
         </p>
       </section>
       <section className={styles.section}>
