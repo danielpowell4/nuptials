@@ -51,6 +51,7 @@ export default function Schedule() {
             Coffee Bear
           </Link>{" "}
           rooftop for a joyous reunion featuring welcome drinks and small eats.
+          All are encouraged to join us!
         </p>
         <ul className={styles.detailList}>
           <li>
@@ -185,7 +186,7 @@ export default function Schedule() {
           </li>
           <li>
             <label>Festivities</label>
-            <span>continue into the night</span>
+            <span>Continue into the night</span>
           </li>
         </ul>
       </section>
@@ -197,8 +198,10 @@ export default function Schedule() {
           reminiscing of the fun we have shared.
         </p>
         <p>
-          Precise details to be determined, but we should all share some food
-          downstairs at the Wyman before we head out back to the real world.
+          Precise details to be determined--Dan might make bagels or croissants
+          but depends a bit if he is in a fantastic spot to wake up early or
+          not--but we should all share some caffeine downstairs at the Wyman
+          before we head out back to the real world.
         </p>
       </section>
       <Spacer />
