@@ -147,7 +147,7 @@ export default function Schedule() {
               <br />
               We have gotten to the site in a Mazda 3 with ~no clearance but do
               not necessarily recommend. Carpooling is a good idea, especially
-              for those who wish to indulge in the cider keg.
+              for those who wish to indulge in a pre/post ceremony beverage.
             </span>
           </li>
         </ul>
