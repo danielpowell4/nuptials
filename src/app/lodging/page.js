@@ -56,10 +56,7 @@ export default function Lodging() {
           During our week of nuptials, though, we are unable to comfortably host
           all our friends and family at the same time.
         </p>
-        <p>
-          We recommend staying at <Link href="the-wyman">The Wyman</Link>, four
-          blocks from our house.
-        </p>
+        <p>We recommend staying at The Wyman, four blocks from our house.</p>
         <p>We have the whole place--all 15 rooms--blocked off!</p>
       </section>
       <section id="the-wyman" className={styles.section}>
@@ -78,8 +75,7 @@ export default function Lodging() {
           </span>
         </h2>
         <p>
-          {`We're stoked to be having events at our favorite hang out in town, `}
-          <Link href="https://thewyman.com/">The Wyman Hotel</Link>.
+          {`We're stoked to be having events at our favorite hang out in town, The Wyman Hotel.`}
         </p>
         <blockquote>
           {`Located on Silverton's main street, the 1902 landmark building has
