@@ -92,7 +92,7 @@ export default function Lodging() {
         <p>
           Many rooms are suites and can comfortably fit more than 1 couple.
           There is also a <em>sweet</em> bunk room that you should certainly
-          consider while it stays available.
+          consider while it stays available. Bunk room! Seriously.
         </p>
         <LinkButton
           href="http://hotels.cloudbeds.com/reservation/ZhecWY?allotment_block_code=b068281#checkin=2024-09-06&checkout=2024-09-08"
@@ -105,8 +105,8 @@ export default function Lodging() {
           Friday - Sunday, contact their team at 970.799.4952.
         </p>
         <p>
-          If you have any questions about other arrangements like food, shoot us
-          a text!
+          If you have any questions about other arrangements or waited too long
+          and the hotel got booked, shoot us a text!
         </p>
         <p>We want this week to be as awesome as it can be for all involved.</p>
       </section>
