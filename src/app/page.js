@@ -69,6 +69,9 @@ export default function Home() {
             src={`https://res.cloudinary.com/dano-photos/image/upload/v1705261123/25082137-6481-404A-AB89-2A6BE9256B2D_1_105_c_ujrzai.jpg`}
           />
         </div>
+        <small>
+          First date pictures: <date>May 1, 2014</date>
+        </small>
       </section>
       <section className={homeStyles.section}>
         <h2 className={styles.stickySectionHeader}>{`How it's going`}</h2>
