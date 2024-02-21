@@ -162,7 +162,7 @@ export default function Home() {
           while they last and checking out the bunk room for an extra good time.
         </p>
         <h3>
-          <Link href="/getting-here">
+          <Link href="/stuff-to-do">
             <span role="img" aria-label="Dogs in Mountains">
               🐕 🏔️ 🐕‍🦺
             </span>{" "}
@@ -175,7 +175,7 @@ export default function Home() {
           park, river front or mountain drive.
         </p>
         <h3>
-          <Link href="/getting-here">
+          <Link href="/schedule">
             <span role="img" aria-label="Clipboard + Ring + Disco">
               📋 💍 🪩
             </span>{" "}
