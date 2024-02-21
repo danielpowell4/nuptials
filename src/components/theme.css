@@ -66,9 +66,9 @@
   --text-color-hover: var(--gray-600);
   --text-color-disabled: var(--gray-200);
   --text-color-placeholder: var(--gray-400);
-  --link-color: var(--purple-500);
+  --link-color: #967152; /*var(--purple-500)*/
   --link-color-secondary: var(--gray-500);
-  --link-color-pressed: var(--purple-600);
+  --link-color-pressed: #ac9684; /* var(--purple-600);*/
   --border-color: var(--gray-300);
   --border-color-hover: var(--gray-400);
   --border-color-pressed: var(--gray-400);

@@ -20,14 +20,6 @@
   --fixedNavHeight: 128px;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: 255, 255, 255;
-    --background-start: 0, 0, 0;
-    --background-end: 0, 0, 0;
-  }
-} */
-
 @media screen and (min-width: 700px) {
   :root {
     --fixedNavHeight: 0px;
@@ -78,12 +70,6 @@ blockquote::before {
   bottom: 0;
   background: var(--hr);
   width: 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 h1 {
