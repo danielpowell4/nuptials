@@ -109,6 +109,7 @@ export default function RsvpForm() {
                       type="button"
                       onClick={() => arrayHelpers.push({ ...emptyGuest })}
                       title="Add a guest"
+                      style={{ minWidth: "66px", height: "2rem" }}
                     >
                       Add +
                     </Button>
@@ -132,7 +133,7 @@ export default function RsvpForm() {
                                 label="First name"
                                 name={`guests.${index}.firstName`}
                                 value={guest.firstName}
-                                style={{ flex: "1 0 5rem" }}
+                                className={`react-aria-TextField ${formStyles.GuestItem__name}`}
                                 onChange={(val) =>
                                   setFieldValue(
                                     `guests.${index}.firstName`,
@@ -146,7 +147,7 @@ export default function RsvpForm() {
                               <TextField
                                 label="Family Name"
                                 name={`guests.${index}.lastName`}
-                                style={{ flex: "1 0 5rem" }}
+                                className={`react-aria-TextField ${formStyles.GuestItem__name}`}
                                 onChange={(val) =>
                                   setFieldValue(`guests.${index}.lastName`, val)
                                 }
@@ -159,7 +160,7 @@ export default function RsvpForm() {
                                 label="Phone or Email"
                                 name={`guests.${index}.contact`}
                                 description={"Preferred (or both if you fancy)"}
-                                style={{ flex: "1 0 8rem" }}
+                                className={`react-aria-TextField ${formStyles.GuestItem__phone}`}
                                 onChange={(val) =>
                                   setFieldValue(`guests.${index}.contact`, val)
                                 }
@@ -172,7 +173,9 @@ export default function RsvpForm() {
                                   style={{ alignSelf: "center" }}
                                   type="button"
                                   onClick={() => arrayHelpers.remove(index)} // remove a guest from the list
-                                  aria-label="Remove this guest"
+                                  aria-label={`Remove ${namesByGuestIndex.get(
+                                    index
+                                  )} as a guest`}
                                 >
                                   -
                                 </Button>
