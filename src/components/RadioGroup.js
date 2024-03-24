@@ -26,7 +26,10 @@ export default function RadioGroup({
       <Label>{label}</Label>
       {children}
       {description && (
-        <Text slot="description" style={{ whiteSpace: "pre" }}>
+        <Text
+          slot="description"
+          style={{ whiteSpace: "pre-line", lineHeight: 1.5 }}
+        >
           {description}
         </Text>
       )}

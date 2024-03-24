@@ -277,6 +277,7 @@ export default function RsvpForm() {
                           description={
                             "Would you like to be added to a carpool pool?\nWe will connect you with other folks to coordinate transportation for the weekend."
                           }
+                          style={{ marginBottom: "1rem" }}
                         >
                           <Radio value="yes">Yes</Radio>
                           <Radio value="no">No</Radio>
