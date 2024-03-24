@@ -15,21 +15,6 @@ export default function Rsvp() {
       <p>
         Respond, if you please to your invitation to our grand San Juan soiree.
       </p>
-      <div
-        style={{
-          padding: "1.15rem",
-          backgroundColor: "#ff9b88",
-          border: "2px solid #930000",
-          borderRadius: "0.25rem",
-          margin: "1.15rem auto",
-          fontFamily: "futura-pt",
-          fontSize: "1.15rem",
-        }}
-      >
-        THIS IS UNDER CONSTRUCTION AND WILL NOT BE RECORDED.
-        <br />
-        DO NOT COMPLETE!
-      </div>
       <RsvpForm />
     </main>
   );

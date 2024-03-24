@@ -3,6 +3,7 @@
 import { Button, Form, TextField, TextArea, RadioGroup } from "@/components";
 import { Radio, Text } from "react-aria-components";
 import { Formik, FieldArray } from "formik";
+import { useRouter } from "next/navigation";
 
 import formStyles from "./RsvpForm.module.css";
 
@@ -21,10 +22,35 @@ const initialValues = {
   carpoolPool: "no",
 };
 
+// error alert
+/* <div
+      style={{
+        padding: "1.15rem",
+        backgroundColor: "#ff9b88",
+        border: "2px solid #930000",
+        borderRadius: "0.25rem",
+        margin: "1.15rem auto",
+        fontFamily: "futura-pt",
+        fontSize: "1.15rem",
+      }}
+    >
+      THIS IS UNDER CONSTRUCTION AND WILL NOT BE RECORDED.
+      <br />
+      DO NOT COMPLETE!
+    </div> */
+
 export default function RsvpForm() {
+  const router = useRouter();
+
   return (
     <Formik initialValues={initialValues}>
-      {({ values, setFieldValue, setFieldTouched, ...formikBag }) => {
+      {({
+        values,
+        setFieldValue,
+        setFieldTouched,
+        isSubmitting,
+        ...formikBag
+      }) => {
         const namesByGuestIndex = new Map();
         values.guests.forEach((guest, index) => {
           namesByGuestIndex.set(
@@ -37,8 +63,36 @@ export default function RsvpForm() {
           <Form
             onInvalid={() => {}}
             onReset={() => {}}
-            onSubmit={() => {
-              alert(`Submitted with ${JSON.stringify(values, null, 2)}`);
+            onSubmit={async (event) => {
+              event.preventDefault();
+
+              // start loading thanks page
+              router.prefetch("/rsvp/thanks");
+
+              const sharedFields = {
+                carpoolPool: values.carpoolPool,
+                message: values.message,
+              };
+              const asRows = values.guests.map((guest) => ({
+                ...guest,
+                ...sharedFields,
+              }));
+
+              try {
+                await fetch("/rsvp/save", {
+                  method: "POST",
+                  body: JSON.stringify({ rows: asRows }),
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                });
+                router.push("/rsvp/thanks");
+              } catch (err) {
+                console.error(err);
+                alert(
+                  "Oh no! Something went wrong. If this persists, please let us know it is busted."
+                );
+              }
             }}
           >
             <FieldArray
@@ -248,7 +302,9 @@ export default function RsvpForm() {
               )}
             />
 
-            <Button type="submit">Submit</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "..." : "Submit"}
+            </Button>
           </Form>
         );
       }}
