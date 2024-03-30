@@ -8,14 +8,18 @@ const formatCount = (count) =>
     maximumFractionDigits: 0,
   }).format(count);
 
-const Counter = ({ count, label }) => (
-  <div className={styles.Counter}>
+const Counter = ({ count, label, inline = false }) => (
+  <div
+    className={[styles.Counter, inline && styles.CounterInline]
+      .filter(Boolean)
+      .join(" ")}
+  >
     <div className="count">{formatCount(count)}</div>
     <div className="label">{label}</div>
   </div>
 );
 
-const Countdown = ({ title, until }) => {
+const Countdown = ({ title, until, inline = false }) => {
   const calculateTimeLeft = () => {
     const targetDate = new Date(until);
     const currentDate = new Date();
@@ -41,6 +45,27 @@ const Countdown = ({ title, until }) => {
 
     return () => clearTimeout(timer);
   });
+
+  if (inline) {
+    return (
+      <div
+        className={[styles.Countdown, inline && styles.CountdownInline]
+          .filter(Boolean)
+          .join(" ")}
+      >
+        {timeLeft.days > 0 && (
+          <Counter count={timeLeft.days} label="days" inline />
+        )}
+        {timeLeft.hours > 0 && (
+          <Counter count={timeLeft.hours} label="hours" inline />
+        )}
+        {timeLeft.minutes > 0 && (
+          <Counter count={timeLeft.minutes} label="minutes" inline />
+        )}
+        <Counter count={timeLeft.seconds} label="seconds" inline />
+      </div>
+    );
+  }
 
   return (
     <div className={styles.CountdownContainer}>

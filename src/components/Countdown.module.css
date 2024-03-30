@@ -1,7 +1,6 @@
 .CountdownContainer {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -10,10 +9,19 @@
   gap: 1.15rem;
   margin-bottom: 1.15rem;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .Counter {
   text-align: center;
+}
+
+.CountdownInline {
+  display: contents;
+}
+
+.CounterInline {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-right: 0.25rem;
 }
