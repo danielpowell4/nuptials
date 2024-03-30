@@ -39,7 +39,8 @@ export default function Home() {
             sizes="80vw"
             quality={100}
             alt={`Serious time in McMillan Meadows`}
-            style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
+            className={homeStyles.heroImg}
+            responsive
           />
         </div>
 
@@ -54,7 +55,8 @@ export default function Home() {
             gravity="auto"
             sizes="50vw"
             alt={`Spin by the lake`}
-            style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
+            className={homeStyles.heroImg}
+            responsive
           />
 
           <CldImage
@@ -67,7 +69,8 @@ export default function Home() {
             gravity="auto"
             sizes="50vw"
             alt={`All smiles and laughing`}
-            style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
+            className={homeStyles.heroImg}
+            responsive
           />
         </div>
 
@@ -82,7 +85,8 @@ export default function Home() {
             gravity="auto"
             sizes="50vw"
             alt={`Smiles over Chattanooga`}
-            style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
+            className={homeStyles.heroImg}
+            responsive
           />
 
           <CldImage
@@ -95,7 +99,8 @@ export default function Home() {
             gravity="auto"
             sizes="50vw"
             alt={`Dancing in McMillan Meadows`}
-            style={{ border: "2px solid var(--hr)", borderRadius: "1rem" }}
+            className={homeStyles.heroImg}
+            responsive
           />
         </div>
       </div>
@@ -340,7 +345,7 @@ export default function Home() {
           "https://res.cloudinary.com/dano-photos/image/upload/v1711077443/Screenshot_2024-03-21_at_9.08.24_PM_qee5ja.png",
         ].map((src, champagneIndex) => (
           <CldImage
-            key={src}
+            key={champagneIndex}
             src={src}
             width={280}
             height={380}
