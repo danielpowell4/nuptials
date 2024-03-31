@@ -74,14 +74,14 @@ export default function Activities() {
 
   const categories = [
     {
-      id: "lakes",
-      name: "Lakes",
-      ref: lakesRef,
-    },
-    {
       id: "from-door",
       name: "From Door",
       ref: fromDoorRef,
+    },
+    {
+      id: "lakes",
+      name: "Lakes",
+      ref: lakesRef,
     },
     {
       id: "peaks",
@@ -164,7 +164,7 @@ export default function Activities() {
           crop="fill"
           gravity="auto"
           responsive
-          sx={{ maxWidth: "100%" }}
+          style={{ maxWidth: "100%", height: "auto" }}
         />
       </section>
 
