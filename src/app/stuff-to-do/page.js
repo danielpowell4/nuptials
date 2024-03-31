@@ -12,7 +12,6 @@ import { useSearchParams } from "next/navigation";
 import { CldImage } from "@/components";
 
 import ActivityCategory from "./ActivityCategory";
-import { Link } from "react-aria-components";
 
 const intersectionObsOptions = {
   threshold: [0.05, 0.1, 0.2, 0.25, 0.5, 0.75, 0.8, 0.9, 0.95],
