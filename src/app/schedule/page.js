@@ -41,6 +41,7 @@ export default function Schedule() {
             border: "1px solid var(--hr)",
             borderRadius: "4px",
             maxWidth: "100%",
+            height: "auto",
           }}
         />
 
