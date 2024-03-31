@@ -33,7 +33,7 @@ export default function Home() {
               "https://res.cloudinary.com/dano-photos/image/upload/v1711077536/Screenshot_2024-03-21_at_9.18.05_PM_ccl3ym.png"
             }
             width={720}
-            height={568}
+            height={480}
             crop="fill"
             gravity="auto"
             sizes="80vw"

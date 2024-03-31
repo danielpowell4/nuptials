@@ -21,10 +21,14 @@
 .hero__row3 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.hero__row1 {
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -41,8 +45,6 @@
   .hero__row1,
   .hero__row2,
   .hero__row3 {
-    margin-bottom: 1rem;
-    gap: 1rem;
     flex-direction: row;
   }
 
