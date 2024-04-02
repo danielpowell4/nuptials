@@ -14,7 +14,8 @@ export const metadata = {
     description:
       "Celebrating 10-years and 10-million miles on Sept 7, 2024 in Silverton, CO.",
     images: [
-      "https://res.cloudinary.com/dano-photos/image/upload/c_thumb,w_200,g_face/v1711077535/Screenshot_2024-03-21_at_9.18.37_PM_j93jas.png",
+      "https://res.cloudinary.com/dano-photos/image/upload/c_thumb,w_225,h_120,g_face/v1711077535/Screenshot_2024-03-21_at_9.18.37_PM_j93jas.png",
+      "https://res.cloudinary.com/dano-photos/image/upload/c_thumb,w_450,h_240,g_face/v1711077535/Screenshot_2024-03-21_at_9.18.37_PM_j93jas.png",
     ],
   },
 };
