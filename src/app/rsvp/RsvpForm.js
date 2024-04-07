@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 import { Button, Form, TextField, TextArea, RadioGroup } from "@/components";
 import { Radio, Text } from "react-aria-components";
 import { Formik, FieldArray } from "formik";
@@ -22,25 +24,9 @@ const initialValues = {
   carpoolPool: "no",
 };
 
-// error alert
-/* <div
-      style={{
-        padding: "1.15rem",
-        backgroundColor: "#ff9b88",
-        border: "2px solid #930000",
-        borderRadius: "0.25rem",
-        margin: "1.15rem auto",
-        fontFamily: "futura-pt",
-        fontSize: "1.15rem",
-      }}
-    >
-      THIS IS UNDER CONSTRUCTION AND WILL NOT BE RECORDED.
-      <br />
-      DO NOT COMPLETE!
-    </div> */
-
 export default function RsvpForm() {
   const router = useRouter();
+  const [errorMsg, setErrorMsg] = React.useState();
 
   return (
     <Formik initialValues={initialValues}>
@@ -79,19 +65,20 @@ export default function RsvpForm() {
               }));
 
               try {
-                await fetch("/rsvp/save", {
+                const res = await fetch("/not-a-url/rsvp/save", {
                   method: "POST",
                   body: JSON.stringify({ rows: asRows }),
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
+                  headers: { "Content-Type": "application/json" },
                 });
-                router.push("/rsvp/thanks");
+
+                if (res.ok) {
+                  router.push("/rsvp/thanks");
+                } else {
+                  throw new Error("Failed to save RSVPs");
+                }
               } catch (err) {
                 console.error(err);
-                alert(
-                  "Oh no! Something went wrong. If this persists, please let us know it is busted."
-                );
+                setErrorMsg(err.message);
               }
             }}
           >
@@ -305,6 +292,25 @@ export default function RsvpForm() {
                 </div>
               )}
             />
+
+            {Boolean(errorMsg) && (
+              <div
+                style={{
+                  padding: "1.15rem",
+                  backgroundColor: "#ff9b88",
+                  border: "2px solid #930000",
+                  borderRadius: "0.25rem",
+                  margin: "1.15rem auto",
+                  fontFamily: "futura-pt",
+                  fontSize: "1.15rem",
+                  width: "100%",
+                }}
+              >
+                Error: {errorMsg}
+                <br />
+                {"Oh no! If this persists, please let us know it is busted."}
+              </div>
+            )}
 
             <Button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "..." : "Submit"}
