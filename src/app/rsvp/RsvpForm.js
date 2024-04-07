@@ -65,7 +65,7 @@ export default function RsvpForm() {
               }));
 
               try {
-                const res = await fetch("/not-a-url/rsvp/save", {
+                const res = await fetch("/rsvp/save", {
                   method: "POST",
                   body: JSON.stringify({ rows: asRows }),
                   headers: { "Content-Type": "application/json" },
