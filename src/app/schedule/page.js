@@ -117,12 +117,12 @@ export default function Schedule() {
                 target="_blank"
               >
                 encouraged
-              </Link>
+              </Link>{" "}
               <Link
                 href="https://hiddenbotanicsweddings.com/products/whimsical-ivy-bridal-crown-with-cream-peonies-gypsohila-babys-breath-wedding-crown"
                 target="_blank"
               >
-                .
+                !
               </Link>
             </span>
           </li>
