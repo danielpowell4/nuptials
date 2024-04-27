@@ -52,7 +52,10 @@ export default function RsvpForm() {
             onSubmit={async (event) => {
               event.preventDefault();
 
-              // start loading thanks page
+              // start
+              // - loader
+              formikBag.setSubmitting(true);
+              // - loading thanks page
               router.prefetch("/rsvp/thanks");
 
               const sharedFields = {
@@ -79,6 +82,7 @@ export default function RsvpForm() {
               } catch (err) {
                 console.error(err);
                 setErrorMsg(err.message);
+                formikBag.setSubmitting(false);
               }
             }}
           >
