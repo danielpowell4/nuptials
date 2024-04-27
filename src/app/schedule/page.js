@@ -72,7 +72,47 @@ export default function Schedule() {
           </li>
           <li>
             <label>Attire</label>
-            <span>Elevated casual, sparkles encouraged</span>
+            <span>
+              <Link
+                href="https://www.google.com/search?q=small+floral+fabric"
+                target="_blank"
+              >
+                Floral
+              </Link>{" "}
+              <Link
+                href="https://www.ruesaintpatrick.com/collections/short-sleeve"
+                target="_blank"
+              >
+                patterns
+              </Link>{" "}
+              <Link
+                href="https://www.gracerosefarm.com/products/juliet"
+                target="_blank"
+              >
+                and
+              </Link>{" "}
+              <Link href="https://getlemonhead.com/" target="_blank">
+                sparkles
+              </Link>{" "}
+              <Link
+                href="https://www.theleathercity.com/product/taylor-swift-1989-world-tour-sequin-jacket/"
+                target="_blank"
+              >
+                are
+              </Link>{" "}
+              <Link
+                href="https://www.google.com/search?q=flower+crown"
+                target="_blank"
+              >
+                encouraged
+              </Link>
+              <Link
+                href="https://hiddenbotanicsweddings.com/products/whimsical-ivy-bridal-crown-with-cream-peonies-gypsohila-babys-breath-wedding-crown"
+                target="_blank"
+              >
+                .
+              </Link>
+            </span>
           </li>
         </ul>
       </section>
