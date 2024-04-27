@@ -86,10 +86,22 @@ export default function Schedule() {
                 patterns
               </Link>{" "}
               <Link
-                href="https://www.gracerosefarm.com/products/juliet"
+                href="https://www.highcountryroses.com/shop/modern-roses/hybrid-teas-grandifloras/princesse-charlene-de-monaco/"
                 target="_blank"
               >
                 and
+              </Link>{" "}
+              <Link
+                href="https://www.gracerosefarm.com/products/juliet"
+                target="_blank"
+              >
+                /
+              </Link>{" "}
+              <Link
+                href="https://www.google.com/search?sca_esv=f116dc5384b4bd87&q=peonies&uds=AMwkrPs4weTB3nAhxTiOjI0cLaoULIh3sZxNDc6FSMXeDCgW7aZwvcSd2nCkjcgtuZydk-bkT6yGyIWQikJI_irrwNcVvxL0shRcCxo2LCImsYY8CSD0BZfeZUnBXwGzr-P6jT7Q1QauPqD7s7Cck-0VWTGKuIseQi76lC_LGHj4RrUgDR1sV6hdTHkSdnCmBqyiuZbYnC_8GDMqd6_mp_S_UGv1dJsG1P4fEq0sG1ez3iU_NnyueixRYhawyzsvzrlgQ7bC-PHafJVhkCA9GMy-yrPi2WZmX9SWzhSUXW_KGYRl5CrwDCHrU0lTZXw1f5-f3dW4pA_r&udm=2&prmd=isvnmbtz&sa=X&ved=2ahUKEwiohcrPiuOFAxVIAjQIHf0pAP0QtKgLegQICxAB&biw=1512&bih=775&dpr=2.2"
+                target="_blank"
+              >
+                or
               </Link>{" "}
               <Link href="https://getlemonhead.com/" target="_blank">
                 sparkles
