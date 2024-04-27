@@ -144,9 +144,9 @@ export default function RsvpForm() {
                               />
                               <TextField
                                 isRequired
-                                label="Phone or Email"
+                                label="Phone"
                                 name={`guests.${index}.contact`}
-                                description={"Preferred (or both if you fancy)"}
+                                description={"Ideally text enabled"}
                                 className={`react-aria-TextField ${formStyles.GuestItem__phone}`}
                                 onChange={(val) =>
                                   setFieldValue(`guests.${index}.contact`, val)
