@@ -21,7 +21,7 @@ const emptyGuest = {
 const initialValues = {
   guests: [emptyGuest],
   message: "",
-  carpoolPool: "no",
+  carpoolPool: "",
 };
 
 export default function RsvpForm() {
@@ -269,6 +269,7 @@ export default function RsvpForm() {
                             "Would you like to be added to a carpool pool?\nWe will connect you with other folks to coordinate transportation for the weekend."
                           }
                           style={{ marginBottom: "1rem" }}
+                          isRequired
                         >
                           <Radio value="yes--needs-airport-pickup">{`Yes, we will need a ride from an airport`}</Radio>
                           <Radio value="yes--driver">{`Yes, we're driving to Silverton and have a spot`}</Radio>
