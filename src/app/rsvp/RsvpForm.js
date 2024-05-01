@@ -270,8 +270,11 @@ export default function RsvpForm() {
                           }
                           style={{ marginBottom: "1rem" }}
                         >
-                          <Radio value="yes">Yes</Radio>
-                          <Radio value="no">No</Radio>
+                          <Radio value="yes--needs-airport-pickup">{`Yes, we will need a ride from an airport`}</Radio>
+                          <Radio value="yes--driver">{`Yes, we're driving to Silverton and have a spot`}</Radio>
+                          <Radio value="yes--event">{`Yes, we'd like to commute with friends to the ceremony`}</Radio>
+                          <Radio value="no">{`No, my car is already full and/or I like my space`}</Radio>
+                          <Radio value="other">{`Other, I don't fit into one of these boxes`}</Radio>
                         </RadioGroup>
                         <TextArea
                           label="Message for the Happy Couple"
