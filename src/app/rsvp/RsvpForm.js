@@ -136,7 +136,7 @@ export default function RsvpForm() {
                                 }
                               />
                               <TextField
-                                label="Family Name"
+                                label="Family name"
                                 name={`guests.${index}.lastName`}
                                 className={`react-aria-TextField ${formStyles.GuestItem__name}`}
                                 onChange={(val) =>
