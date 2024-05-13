@@ -3,6 +3,7 @@ name: "Shrine of the Mines"
 slug: "shrine-of-the-mines"
 category: "From Door"
 position: 4
+primary_url: "https://res.cloudinary.com/dano-photos/image/upload/v1715394924/christ-of-mines_uponvk.webp"
 ---
 
 This Jesus statue is a winter go-to for running and a stellar view of Pidgeon peak (Julia's favorite). You can drive--almost--the whole way there or walk straight to it from top through a historic neighborhood called "Quality" hill by some and "Snob hill" by others. A few times a year a firework show is launched from road.

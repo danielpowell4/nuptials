@@ -3,6 +3,7 @@ name: "Kendall Lift Line"
 slug: "kendall-lift-line"
 category: "From Door"
 position: 5
+primary_url: "https://res.cloudinary.com/dano-photos/image/upload/v1715395216/kendallmountain_j6hghu.jpg"
 ---
 
 Catch the lift line from the base of Kendall. From the Wyman, cross Greene st and walk across the bridges to Cement Creek and then the upper Animas River.
