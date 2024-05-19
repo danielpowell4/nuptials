@@ -282,12 +282,13 @@ export default function RsvpForm() {
                           name={`message`}
                           placeholder="HAGS see you in September."
                           description={
-                            "Any other information you'd like to share or ask about!"
+                            "What will make your visit fantastic? // Any other information you'd like to share or ask about!"
                           }
                           value={values.message}
                           style={{ maxWidth: "26rem", width: "100%" }}
                           onChange={(val) => setFieldValue("message", val)}
                           onBlur={() => setFieldTouched("message")}
+                          isRequired
                         />
                       </div>
                     </>
