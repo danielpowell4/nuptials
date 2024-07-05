@@ -289,12 +289,12 @@ export default function Home() {
           </p>
 
           <p>
-            <strong>RSVP by July 1, 2024:</strong>
+            <strong>RSVP in July 2024</strong>
             <br />
             <span>
-              Please let us know if you will be able to join us by July 1st,
-              2024. This will help us ensure you have a bite to eat and a spot
-              on the dance floor. Also please do not wait until the last day.
+              Please let us know if you will be able to join us in July 2024.
+              This will help us ensure you have a bite to eat and a spot on the
+              dance floor. Also please do not wait until the last day.
               Sooner-is-better!
             </span>
           </p>
