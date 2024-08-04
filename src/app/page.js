@@ -165,9 +165,9 @@ export default function Home() {
           <h2 className={styles.stickySectionHeader}>{`How it's going`}</h2>
           <p>Pretty swell!</p>
           <p>
-            Shortly after moving in together at DU, we got a dog. Beacon has
-            since completed the Colorado Trail, skied off the seven summits and
-            collected an ample amount of butter off the counter.
+            Shortly after moving in together at DU, we got a dog. Beacon went on
+            to complete the Colorado Trail, ski off at least seven summits and
+            collect an ample amount of butter off the counter.
           </p>{" "}
           <CldImage
             width={260}
