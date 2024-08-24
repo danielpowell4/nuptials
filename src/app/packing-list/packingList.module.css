@@ -1,0 +1,5 @@
+.PackItem:before {
+  content: "☑️";
+  margin-right: 10px;
+  font-size: 20px;
+}

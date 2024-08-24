@@ -11,6 +11,9 @@ export default function Nav() {
           <Link href="/getting-here">Traveling</Link>
         </li>
         <li>
+          <Link href="/packing-list">Packing</Link>
+        </li>
+        <li>
           <Link href="/lodging">Sleeping</Link>
         </li>
         <li>

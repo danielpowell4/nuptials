@@ -24,7 +24,7 @@ export default function Schedule() {
           an extended stay in the San Juan Mountains. Text us!
         </p>
       </section>
-      <section className={styles.section}>
+      <section className={styles.section} id="coffee-bear-rooftop">
         <h2 className={styles.stickySectionHeader}>Friday | Sept 6, 2024</h2>
 
         <CldImage
@@ -128,7 +128,7 @@ export default function Schedule() {
           </li>
         </ul>
       </section>
-      <section className={styles.section}>
+      <section className={styles.section} id="nuptials">
         <h2 className={styles.stickySectionHeader}>Saturday | Sept 7, 2024</h2>
         <h3>Nuptials + Jamboree</h3>
         <p>

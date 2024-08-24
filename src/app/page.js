@@ -13,9 +13,9 @@ export default function Home() {
           <div className={homeStyles.hero__copy}>
             <h1>{`You're invited!`}</h1>
             <p>
-              Julia Marie and Daniel Micah are giddy to invite you to join us in
-              the celebration of our first 10 years together and our next 10,000
-              years to come.
+              Julia Marie and Daniel Micah are giddy you {/* to invite you */}
+              are coming to join us in the celebration of our first 10 years
+              together and our next 10,000 years to come.
             </p>
             <div style={{ margin: "2rem 0" }}>
               <Countdown
@@ -25,7 +25,8 @@ export default function Home() {
             </div>
             <div style={{ display: "flex", gap: "2rem", flexFlow: "row wrap" }}>
               <LinkButton href="#how-it-started">{`Story time`}</LinkButton>
-              <LinkButton href="#what-we-need-from-you">{`RSVP`}</LinkButton>
+              {/* <LinkButton href="#what-we-need-from-you">{`RSVP`}</LinkButton> */}
+              <LinkButton href="#what-to-expect">{`Details`}</LinkButton>
             </div>
           </div>
           <CldImage
@@ -254,6 +255,32 @@ export default function Home() {
             time.
           </p>
           <h3>
+            <Link href="/schedule">
+              <span role="img" aria-label="Clipboard + Ring + Disco">
+                📋 💍 🪩
+              </span>{" "}
+              Schedule of Events
+            </Link>
+          </h3>
+          <p>
+            First official event is on Friday, September 6, 2024 with the
+            nuptials and jamboree on September 7, 2024. If you are unsure if you
+            have a +1, text us. You do but we need to know if they are coming.
+          </p>
+          <h3>
+            <Link href="/packing-list">
+              <span role="img" aria-label="List + Bag + Umbrella">
+                📋 🛍️ 🌂
+              </span>{" "}
+              What to Pack / Wear
+            </Link>
+          </h3>
+          <p>
+            Avoid the last night packing unknown and angst with this simple list
+            of tips and tricks that will make sure you are ready for your
+            weekend at our base camp in the San Juan mountains.
+          </p>
+          <h3>
             <Link href="/stuff-to-do">
               <span role="img" aria-label="Dogs in Mountains">
                 🐕 🏔️ 🐕‍🦺
@@ -265,19 +292,6 @@ export default function Home() {
             The outdoors hold a special place in our heart. You can start and
             end a legendary 100-mile course from town. You can also enjoy a
             local park, river front or mountain drive.
-          </p>
-          <h3>
-            <Link href="/schedule">
-              <span role="img" aria-label="Clipboard + Ring + Disco">
-                📋 💍 🪩
-              </span>{" "}
-              Schedule of Events
-            </Link>
-          </h3>
-          <p>
-            First official event is on Friday, September 6, 2024 with the
-            nuptials and jamboree on September 7, 2024. If you are unsure if you
-            have a +1, text us. You probably do.
           </p>
         </section>
         <section className={homeStyles.section} id="what-we-need-from-you">
