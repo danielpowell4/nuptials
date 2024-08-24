@@ -147,6 +147,14 @@ export default function Schedule() {
           earlier start.
         </p>
 
+        <h4>Wyman bar open ahead of time.</h4>
+
+        <p>
+          Please remember we have all night. <strong>No</strong> need to get off
+          to a fast start. But as you get ready, come congregate in the Wyman
+          bar/lobby area. No dogs on couches!
+        </p>
+
         <h4>
           Head to Ceremony at <time>3:00 PM</time>
         </h4>
@@ -155,7 +163,11 @@ export default function Schedule() {
           sun.
           <br />
           Plan to be buttoned up in formal attire and heading to the ceremony by
-          3:00 PM.
+          <strong>3:15 PM.</strong>
+        </p>
+        <p>
+          Meet in the Wyman lobby and head over as a group. Ben and Sophie Blue
+          will lead the way. Fewer cars is preferred for parking purposes.
         </p>
 
         <h4>Nuptials</h4>
@@ -183,7 +195,27 @@ export default function Schedule() {
           </li>
           <li>
             <label>Location</label>
-            <span>{`TBA pending approval from federal government (actually)`}</span>
+            <span>
+              <Link href="https://maps.app.goo.gl/9eyg4NFPeuo8SsZE7">
+                {`Arrasta Meadow`}
+              </Link>
+            </span>
+          </li>
+          <li>
+            <label>Parking</label>
+            <span>
+              <Link href="https://maps.app.goo.gl/NgvgEgBsUQKfybfcA">
+                Just before
+              </Link>
+            </span>
+            <span>
+              <Link href="https://maps.app.goo.gl/RzEYWLKcgFK98E3N8">
+                Just past
+              </Link>
+            </span>
+            <span>
+              <strong>DO NOT BLOCK THE ROAD!</strong>
+            </span>
           </li>
           <li>
             <label>Attire</label>
