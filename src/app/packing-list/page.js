@@ -45,7 +45,7 @@ export default function PackingList({ params, searchParams }) {
       </section>
 
       <section id="outdoor-clothes" className={styles.section}>
-        <h2>Outdoor clothes</h2>
+        <h2>1. Outdoor clothes</h2>
         <h3>Hiking shoes + layers + rain gear</h3>
 
         {isExpanded ? (
@@ -60,7 +60,7 @@ export default function PackingList({ params, searchParams }) {
         ) : (
           <NextLink
             style={linkButtonStyles}
-            href="?details=thanks"
+            href="?details=yes-please"
             scroll={false}
             shallow
           >
@@ -82,12 +82,14 @@ export default function PackingList({ params, searchParams }) {
           </>
         )}
         <h4 className={listStyles.PackItem}>Socks + Undergarments</h4>
-        {isExpanded && <p>For under your shoes. Do not forget them.</p>}
+        {isExpanded && (
+          <p>For under your shoes and stuff. Do not forget them.</p>
+        )}
         <h4 className={listStyles.PackItem}>Base layer</h4>
         {isExpanded && (
           <p>
-            T-shirt and shorts or pants. Check the weather and see what you will
-            be comfortable in.
+            T-shirt and shorts or pants. Check the weather while packing and see
+            what you will be comfortable in.
           </p>
         )}
         <h4 className={listStyles.PackItem}>Walking shoes</h4>
@@ -114,42 +116,104 @@ export default function PackingList({ params, searchParams }) {
         )}
       </section>
       <section id="welcome-drinks" className={styles.section}>
-        <h2>Sparkles and/or floral patterns</h2>
+        <h2>2. Sparkles and / or floral patterns</h2>
         <h3>Welcome party fit</h3>
         <p>
-          Our <Link href="/schedule#coffee-bear-rooftop">welcome party</Link> is
-          all theme is all about the sparkle and the floral.
+          Our <Link href="/schedule#coffee-bear-rooftop">welcome party</Link>{" "}
+          theme is all about the sparkle and the floral.
         </p>
-        <p>Glitter will be available if you forget to participate.</p>
-        <p>
-          The sun will be heading down at 7:31 PM so a light layer is a good
-          idea.
-        </p>
+        {isExpanded ? (
+          <>
+            <p>
+              There will be a spectrum of fancy to casual so do what sounds fun
+              for you!
+            </p>
+            <p>
+              Glitter will be available if you forget to participate or need to
+              pack light.
+            </p>
+            <p>
+              The sun will be heading down at 7:31 PM so a light layer is a good
+              idea.
+            </p>
+          </>
+        ) : (
+          <p>See links in schedule for starter inspiration.</p>
+        )}
       </section>
       <section id="cocktail-attire" className={styles.section}>
-        <h2>Cocktail attire</h2>
+        <h2>3. Cocktail attire</h2>
         <h3>Wedding + reception</h3>
-        <p>
-          It is <em>actually happening.</em>
-        </p>
-        <p>
-          After 10 years, we are saying an official {"'I do'"} and we are
-          excited to <strong>celebrate</strong> with you.
-        </p>
 
-        <Link href="/schedule#coffee-bear-rooftop">
-          View schedule and recommended attire
+        {isExpanded && (
+          <>
+            <p>
+              It is <em>actually happening.</em>
+            </p>
+            <p>
+              After 10 years, we are saying an official {"'I do'"} and we are
+              excited to <strong>celebrate</strong> with you.
+            </p>
+            <p>
+              Our wedding will be on the far fancy side for Silverton. Chacos
+              heavily discouraged.
+            </p>
+          </>
+        )}
+
+        <Link href="/schedule#nuptials">
+          View day-of schedule and link for what {"'cocktail'"} means
         </Link>
       </section>
 
       <section id="cocktail-attire" className={styles.section}>
-        <h2>Essential extras</h2>
+        <h2>4a. Essential extras</h2>
         <h3>Hydration + sunscreen</h3>
+        <h4 className={listStyles.PackItem}>Sunglasses</h4>
+        {isExpanded && (
+          <p>You will be close to the sun. Squinting is not your best look.</p>
+        )}
+        <h4 className={listStyles.PackItem}>Electrolytes</h4>
+        {isExpanded && (
+          <p>
+            Some kinds have sugar. Some kinds are most salt. Both are good to
+            actually be hydrated.
+          </p>
+        )}
+        <h4 className={listStyles.PackItem}>Tasty snacks</h4>
+        {isExpanded && (
+          <p>The kind you will actually eat. Ideally with real sustenance.</p>
+        )}
       </section>
 
       <section id="cocktail-attire" className={styles.section}>
-        <h2>Optional extras</h2>
-        <h3>swimsuits + books</h3>
+        <h2>4b. Optional extras</h2>
+        <h3>Stuff you might want but are not required to bring</h3>
+        <h4 className={listStyles.PackItem}>Mineral-based sunscreen</h4>
+        {isExpanded && (
+          <p>
+            Most of us should cover up with at least some sun screen. Zinc works
+            but does not have to be how you sun block.
+          </p>
+        )}
+        <h4 className={listStyles.PackItem}>Swimsuit</h4>
+        {isExpanded && (
+          <p>Silverton does not have a hot spring but all our neighbors do.</p>
+        )}
+        <h4 className={listStyles.PackItem}>Book(s)</h4>
+        {isExpanded && (
+          <p>
+            You can read! Maybe you will want to on the plane or as you wind
+            down from a day of festivities?
+          </p>
+        )}
+        <h4 className={listStyles.PackItem}>Toys / belly rubs for Oslo</h4>
+        {isExpanded && (
+          <p>
+            Our dog is spoiled. But he is not yet rotten. A little extra love
+            would not hurt before his parents abandon him for their honeymoon.
+          </p>
+        )}
       </section>
     </main>
   );
