@@ -7,6 +7,9 @@ export const metadata = {
   title: "Packing List | Julia & Dan",
   description:
     "What to pack and wear for the wedding of Julia & Dan on Sept 7, 2024.",
+  "og:title": "Packing List | Julia & Dan",
+  "og:description":
+    "What to pack and wear for the wedding of Julia & Dan on Sept 7, 2024.",
 };
 
 const linkButtonStyles = {
