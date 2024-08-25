@@ -4,10 +4,10 @@ import NextLink from "next/link";
 import { Link } from "react-aria-components";
 
 export const metadata = {
-  title: "Packing List | Julia & Dan",
+  title: "Packing List",
   description:
     "What to pack and wear for the wedding of Julia & Dan on Sept 7, 2024.",
-  "og:title": "Packing List | Julia & Dan",
+  "og:title": "Packing List",
   "og:description":
     "What to pack and wear for the wedding of Julia & Dan on Sept 7, 2024.",
 };
