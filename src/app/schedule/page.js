@@ -45,14 +45,14 @@ export default function Schedule() {
           }}
         />
 
-        <h3>Après Welcome Drinks w/ Small Eats</h3>
+        <h3>Welcome Drinks w/ Small Eats</h3>
         <p>
           Kick off our 10-year celebration with us on the scenic{" "}
           <Link href="https://www.instagram.com/coffeebearsilverton/">
             Coffee Bear
           </Link>{" "}
-          rooftop for a joyous reunion featuring welcome drinks and small eats.
-          All are encouraged to join us!
+          rooftop for a joyous reunion featuring welcome drinks and mezze small
+          eats. All are encouraged to join us!
         </p>
         <ul className={styles.detailList}>
           <li>
@@ -150,9 +150,10 @@ export default function Schedule() {
         <h4>Wyman bar open ahead of time.</h4>
 
         <p>
-          Please remember we have all night. <strong>No</strong> need to get off
-          to a fast start. But as you get ready, come congregate in the Wyman
-          bar/lobby area. No dogs on couches!
+          Please remember we have all night. Dan guarantees there is{" "}
+          <strong>no need</strong> to get off to a fast start. But as you get
+          ready, come congregate in the Wyman bar/lobby area. No dogs on
+          couches!
         </p>
 
         <h4>

@@ -8,6 +8,7 @@ import styles from "./FixedFooter.module.css";
 const LINKS = [
   { href: "/getting-here", label: "Travel" },
   { href: "/lodging", label: "Sleep" },
+  { href: "/packing-list", label: "Pack List", accent: true },
   { href: "/stuff-to-do", label: "Play" },
   { href: "/schedule", label: "Schedule" },
   {
@@ -16,7 +17,7 @@ const LINKS = [
     target: "_blank",
     rel: "noopener noreferrer",
   },
-  { href: "/rsvp", label: "RSVP", accent: true },
+  // { href: "/rsvp", label: "RSVP", accent: true },
 ];
 
 const FixedFooter = () => {

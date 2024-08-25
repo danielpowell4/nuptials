@@ -26,7 +26,7 @@ export default function PackingList({ params, searchParams }) {
         <h1>Packing List</h1>
         <p>
           As long as your bring yourself and have someone watching the critters
-          and kiddos and, you {"can't"} go wrong.
+          and kiddos, you {"can't"} go wrong.
         </p>
         <p>
           If we could only pick one word for the weekend we would pick,{" "}
@@ -73,7 +73,7 @@ export default function PackingList({ params, searchParams }) {
             <p>
               You do you! If you want to get out on the early side on Friday,
               Saturday, or Sunday. {"That's"} awesome. If you want to sleep in
-              and walk around town, {"that's"} awesome too.
+              and walk around town, {"that's"} stellar too.
             </p>
             <p>
               Either way, though, September can get chilly and our altitude of
@@ -156,7 +156,13 @@ export default function PackingList({ params, searchParams }) {
             </p>
             <p>
               Our wedding will be on the far fancy side for Silverton. Chacos
-              heavily discouraged.
+              heavily discouraged.{" "}
+              <Link
+                target="_blank"
+                href="https://www.brides.com/cocktail-attire-wedding-4844364"
+              >
+                A Guide to Cocktail Attire for Men and Women
+              </Link>
             </p>
           </>
         )}
