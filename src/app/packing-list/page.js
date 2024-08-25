@@ -11,6 +11,10 @@ export const metadata = {
     title: "Packing List",
     description:
       "What to pack and wear for the wedding of Julia & Dan on Sept 7, 2024.",
+    images: [
+      "https://res.cloudinary.com/dano-photos/image/upload/c_thumb,w_225,h_120,g_face/v1711077535/Screenshot_2024-03-21_at_9.18.37_PM_j93jas.png",
+      "https://res.cloudinary.com/dano-photos/image/upload/c_thumb,w_450,h_240,g_face/v1711077535/Screenshot_2024-03-21_at_9.18.37_PM_j93jas.png",
+    ],
   },
 };
 
